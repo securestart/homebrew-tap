@@ -5,17 +5,35 @@
 class Sstart < Formula
   desc "Sstart: secure start for cloud-native secrets"
   homepage "https://github.com/securestart/sstart"
-  url "https://github.com/securestart/sstart/archive/refs/tags/v0.0.9.tar.gz"
-  sha256 "496bb13b6a06680df9f077936d46985334139d04c926ea5321391c4dc492cb8c"
+  url "https://github.com/securestart/sstart/archive/refs/tags/v0.0.10.tar.gz"
+  sha256 "2e4c12b56b880c6b662a13fbba3a80055cd434f3ba4dc21e806fc7aa5d983eb0"
   license "Apache-2.0"
 
   on_macos do
+    on_intel do
+      url "https://github.com/securestart/sstart/releases/download/v0.0.10/sstart-0.0.10-darwin-amd64.tar.gz"
+      sha256 "d811eaa422f1a7b5c19c61049966e52c88ee795109fe97834b4bbe8015026a9a"
+    end
+
+    on_arm do
+      url "https://github.com/securestart/sstart/releases/download/v0.0.10/sstart-0.0.10-darwin-arm64.tar.gz"
+      sha256 "f7ecbc8fa84e9d5434896714d4fbe6ce55341ca3e0c0965e5e3b8f507807b652"
+    end
   end
 
   on_linux do
+    on_intel do
+      url "https://github.com/securestart/sstart/releases/download/v0.0.10/sstart-0.0.10-linux-amd64.tar.gz"
+      sha256 "bdc9b30e8a1e238cea8bd97a772bd82f448b64cb2dffbf61b266dbecb41019c1"
+    end
+
+    on_arm do
+      url "https://github.com/securestart/sstart/releases/download/v0.0.10/sstart-0.0.10-linux-arm64.tar.gz"
+      sha256 "45464cea1115af79e9adf1fd2fd77aeb94cb6f99628ea53daab366e722f5f65a"
+    end
   end
 
   def install
-    bin.install Dir["**/sstart"].find { |f| File.file?(f) } => "sstart"
+    bin.install Dir["**/sstart"][0] => "sstart"
   end
 end
