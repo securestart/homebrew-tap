@@ -16,6 +16,6 @@ class Sstart < Formula
   end
 
   def install
-    bin.install Dir["**/sstart"][0] => "sstart"
+    bin.install Dir["**/sstart"].find { |f| File.file?(f) } => "sstart"
   end
 end
