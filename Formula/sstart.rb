@@ -6,8 +6,14 @@ class Sstart < Formula
   desc "Sstart: secure start for cloud-native secrets"
   homepage "https://github.com/securestart/sstart"
   url "https://github.com/securestart/sstart/archive/refs/tags/v0.0.9.tar.gz"
-  sha256 "13c06da27d4581113bfa7e546083bf9797076b9c6c5cccf086d7b3cb57b8ca60"
+  sha256 "496bb13b6a06680df9f077936d46985334139d04c926ea5321391c4dc492cb8c"
   license "Apache-2.0"
+
+  on_macos do
+  end
+
+  on_linux do
+  end
 
   def install
     bin.install Dir["**/sstart"][0] => "sstart"
