@@ -5,31 +5,31 @@
 class Sstart < Formula
   desc "Sstart: secure start for cloud-native secrets"
   homepage "https://github.com/securestart/sstart"
-  url "https://github.com/securestart/sstart/archive/refs/tags/v0.0.10.tar.gz"
-  sha256 "2e4c12b56b880c6b662a13fbba3a80055cd434f3ba4dc21e806fc7aa5d983eb0"
+  url "https://github.com/securestart/sstart/archive/refs/tags/v0.0.11.tar.gz"
+  sha256 "0c13c9a698bcc083e1de9dd133b540e26f1144074150d04df1aec0802a1460f5"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/securestart/sstart/releases/download/v0.0.10/sstart-0.0.10-darwin-amd64.tar.gz"
-      sha256 "d811eaa422f1a7b5c19c61049966e52c88ee795109fe97834b4bbe8015026a9a"
+      url "https://github.com/securestart/sstart/releases/download/v0.0.11/sstart-0.0.11-darwin-amd64.tar.gz"
+      sha256 "9144900904798d13bf9daf52c369deb6c2dc0a26e77ff138afff4cbda88b8a46"
     end
 
     on_arm do
-      url "https://github.com/securestart/sstart/releases/download/v0.0.10/sstart-0.0.10-darwin-arm64.tar.gz"
-      sha256 "f7ecbc8fa84e9d5434896714d4fbe6ce55341ca3e0c0965e5e3b8f507807b652"
+      url "https://github.com/securestart/sstart/releases/download/v0.0.11/sstart-0.0.11-darwin-arm64.tar.gz"
+      sha256 "9ae686fa72088a389e18611438fa82ca6df25242c1a12310aa307ec0d0ad7359"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/securestart/sstart/releases/download/v0.0.10/sstart-0.0.10-linux-amd64.tar.gz"
-      sha256 "bdc9b30e8a1e238cea8bd97a772bd82f448b64cb2dffbf61b266dbecb41019c1"
+      url "https://github.com/securestart/sstart/releases/download/v0.0.11/sstart-0.0.11-linux-amd64.tar.gz"
+      sha256 "f4b4e0b816bce8c8a2c2e5498e225e3e787de1868fc3d2c30c5ed52a55006dc2"
     end
 
     on_arm do
-      url "https://github.com/securestart/sstart/releases/download/v0.0.10/sstart-0.0.10-linux-arm64.tar.gz"
-      sha256 "45464cea1115af79e9adf1fd2fd77aeb94cb6f99628ea53daab366e722f5f65a"
+      url "https://github.com/securestart/sstart/releases/download/v0.0.11/sstart-0.0.11-linux-arm64.tar.gz"
+      sha256 "31060c8f41542803de1561e8fe36a391a1e3a95e68fba8c423feb9d61b1538b5"
     end
   end
 
